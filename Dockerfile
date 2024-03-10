@@ -42,7 +42,9 @@ RUN pip3 install ruamel.yaml
 RUN pip3 install qrcode
 RUN pip3 install tzlocal
 RUN pip3 install httpx
-RUN pip3 install opencv-python-headless
+RUN pip3 install opencv-python-headless==4.5.3.56
+# pip3 install opencv-contrib-python==4.5.3.56
+
 RUN pip3 install fake-useragent
 RUN pip3 install matplotlib
 RUN pip3 install pyecharts

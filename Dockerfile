@@ -10,26 +10,26 @@ RUN cd /Rabbit
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 
-RUN pip3 install --no-cache-dir aiohttp
-RUN pip3 install --no-cache-dir APScheduler
-RUN pip3 install --no-cache-dir Jinja2
-RUN pip3 install --no-cache-dir pycryptodome
-RUN pip3 install --no-cache-dir requests
-RUN pip3 install --no-cache-dir sanic
-RUN pip3 install --no-cache-dir uvloop
-RUN pip3 install --no-cache-dir websockets
-RUN pip3 install --no-cache-dir sanic_jwt
-RUN pip3 install --no-cache-dir sanic_openapi
-RUN pip3 install --no-cache-dir tortoise-orm
-RUN pip3 install --no-cache-dir ruamel.yaml
-RUN pip3 install --no-cache-dir sanic_openapi
-RUN pip3 install --no-cache-dir qrcode
-RUN pip3 install --no-cache-dir tzlocal
-RUN pip3 install --no-cache-dir httpx
-RUN pip3 install --no-cache-dir opencv-python-headless
-RUN pip3 install --no-cache-dir fake-useragent
-RUN pip3 install --no-cache-dir matplotlib
-RUN pip3 install --no-cache-dir pyecharts
+RUN pip3 install aiohttp
+RUN pip3 install APScheduler
+RUN pip3 install Jinja2
+RUN pip3 install pycryptodome
+RUN pip3 install requests
+RUN pip3 install sanic
+RUN pip3 install uvloop
+RUN pip3 install websockets
+RUN pip3 install sanic_jwt
+RUN pip3 install sanic_openapi
+RUN pip3 install tortoise-orm
+RUN pip3 install ruamel.yaml
+RUN pip3 install sanic_openapi
+RUN pip3 install qrcode
+RUN pip3 install tzlocal
+RUN pip3 install httpx
+RUN pip3 install opencv-python-headless
+RUN pip3 install fake-useragent
+RUN pip3 install matplotlib
+RUN pip3 install pyecharts
 
 RUN rm -rf /var/lib/apt/lists/*
 

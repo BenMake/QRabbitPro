@@ -9,7 +9,7 @@ RUN apt update \
     git \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
-    && git clone https://github.com/HT944/QRabbitPro.git /Rabbit \
+    && git clone https://github.com/BenMake/QRabbitPro.git /Rabbit \
     && cd /Rabbit \
     && pip3 install --no-cache-dir -r requirements.txt \
     && rm -rf /var/lib/apt/lists/*

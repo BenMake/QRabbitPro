@@ -8,7 +8,7 @@ RUN echo "Asia/Shanghai" > /etc/timezone
 RUN git clone https://github.com/BenMake/QRabbitPro.git /Rabbit 
 RUN cd /Rabbit 
 
-RUN apt-get install --reinstall build-essential
+RUN apt-get install -yq --no-install-recommends --reinstall build-essential
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 

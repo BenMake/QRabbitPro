@@ -11,7 +11,7 @@ RUN cd /Rabbit
 RUN apt-get install -yq --no-install-recommends --reinstall build-essential
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
-RUN pip3 install --upgrade pip
+RUN pip3 install --upgrade pip3
 
 RUN pip3 install aiohttp==3.8.1
 RUN pip3 install APScheduler==4.0.0a2

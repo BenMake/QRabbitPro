@@ -10,19 +10,30 @@ RUN cd /Rabbit
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 
-RUN pip3 install aiohttp
-RUN pip3 install APScheduler
-RUN pip3 install Jinja2
-RUN pip3 install pycryptodome
-RUN pip3 install requests
-RUN pip3 install sanic
-RUN pip3 install uvloop
-RUN pip3 install websockets
-RUN pip3 install sanic_jwt
-RUN pip3 install sanic_openapi
-RUN pip3 install tortoise-orm
+RUN pip3 install aiohttp>=3.8.1
+RUN pip3 install APScheduler>=4.0.0a2
+RUN pip3 install Jinja2>=3.0.3
+RUN pip3 install pycryptodome>=3.14.1
+RUN pip3 install requests>=2.26.0
+RUN pip3 install sanic>=21.12.1
+RUN pip3 install uvloop>=0.16.0
+RUN pip3 install websockets>=10.4
+RUN pip3 install sanic_jwt>=1.8.0
+RUN pip3 install sanic_openapi>=21.12.0
+RUN pip3 install tortoise-orm>=0.19.3
+
+# RUN pip3 install aiohttp
+# RUN pip3 install APScheduler
+# RUN pip3 install Jinja2
+# RUN pip3 install pycryptodome
+# RUN pip3 install requests
+# RUN pip3 install sanic
+# RUN pip3 install uvloop
+# RUN pip3 install websockets
+# RUN pip3 install sanic_jwt
+# RUN pip3 install sanic_openapi
+# RUN pip3 install tortoise-orm
 RUN pip3 install ruamel.yaml
-RUN pip3 install sanic_openapi
 RUN pip3 install qrcode
 RUN pip3 install tzlocal
 RUN pip3 install httpx

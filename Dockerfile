@@ -21,7 +21,7 @@ RUN pip3 install --no-cache-dir websockets
 RUN pip3 install --no-cache-dir sanic_jwt
 RUN pip3 install --no-cache-dir sanic_openapi
 RUN pip3 install --no-cache-dir tortoise-orm
-RUN pip3 install --no-cache-dir ruamel
+RUN pip3 install --no-cache-dir ruamel.yaml
 RUN pip3 install --no-cache-dir sanic_openapi
 RUN pip3 install --no-cache-dir qrcode
 RUN pip3 install --no-cache-dir tzlocal

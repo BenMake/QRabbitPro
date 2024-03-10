@@ -2,7 +2,7 @@ FROM python:3.9-slim-buster
 
 RUN apt update
 RUN apt-get install -yq --no-install-recommends sudo
-RUN apt-get install -yq --no-install-recommends python3-dev gcc libc-dev git
+RUN apt-get install -yq --no-install-recommends python3-dev gcc libc-dev git cmake 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
 RUN echo "Asia/Shanghai" > /etc/timezone 
 RUN git clone https://github.com/BenMake/QRabbitPro.git /Rabbit 
@@ -11,6 +11,7 @@ RUN cd /Rabbit
 RUN apt-get install -yq --no-install-recommends --reinstall build-essential
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
+RUN pip3 install --upgrade pip
 
 RUN pip3 install aiohttp==3.8.1
 RUN pip3 install APScheduler==4.0.0a2

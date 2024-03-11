@@ -9,7 +9,7 @@ RUN git clone https://github.com/BenMake/QRabbitPro.git /Rabbit
 RUN cd /Rabbit 
 
 RUN apt-get install -yq --no-install-recommends --reinstall build-essential
-RUN apt-get install -yq --no-install-recommends libssl-dev
+RUN apt-get install -yq --no-install-recommends libssl-dev file
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 RUN pip3 install --upgrade pip

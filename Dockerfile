@@ -13,6 +13,13 @@ FROM python:3.9-slim-buster
 #     && cd /Rabbit \
 #     && pip3 install --no-cache-dir -r requirements.txt \
 #     && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update
+RUN apt-get install -y software-properties-common lsb-release
+RUN apt-key adv --fetch-keys https://apt.kitware.com/keys/kitware-archive-latest.asc
+RUN apt-add-repository "deb https://apt.kitware.com/ubuntu/ $(lsb_release -cs) main"
+RUN apt-get update
+RUN apt-get install -y cmake
     
 RUN apt update
 RUN apt-get install -yq --no-install-recommends sudo

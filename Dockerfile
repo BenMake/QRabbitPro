@@ -14,6 +14,8 @@ FROM python:3.9-slim-buster
 #     && pip3 install --no-cache-dir -r requirements.txt \
 #     && rm -rf /var/lib/apt/lists/*
 
+RUN apt-get purge --auto-remove cmake
+
 RUN apt-get update && apt-get install -y apt-transport-https ca-certificates
 RUN apt-get install -y software-properties-common lsb-release
 RUN apt-get update

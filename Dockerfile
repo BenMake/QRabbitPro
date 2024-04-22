@@ -14,7 +14,7 @@ FROM python:3.9-slim-buster
 #     && pip3 install --no-cache-dir -r requirements.txt \
 #     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get purge --auto-remove cmake
+#RUN apt-get purge --auto-remove cmake
 
 RUN apt-get update && apt-get install -y apt-transport-https ca-certificates
 RUN apt-get install -y software-properties-common lsb-release
@@ -37,8 +37,7 @@ RUN apt-get install -yq --no-install-recommends libssl-dev file ninja-build
 RUN pip3 install --upgrade pip
 RUN pip3 install ninja
 
-
-RUN apt-get purge --auto-remove cmake
+#RUN apt-get purge --auto-remove cmake
 
 RUN pip3 install aiohttp==3.8.1
 RUN pip3 install APScheduler==4.0.0a2

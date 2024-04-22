@@ -35,7 +35,9 @@ RUN apt-get install -yq --no-install-recommends libssl-dev file ninja-build
 
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 RUN pip3 install --upgrade pip
-RUN pip3 install ninja
+
+RUN python3 -m pip install cmake
+RUN python3 -m pip install meson ninja
 
 #RUN apt-get purge --auto-remove cmake
 
@@ -46,8 +48,6 @@ RUN pip3 install pycryptodome==3.14.1
 RUN pip3 install requests==2.26.0
 RUN pip3 install sanic==21.12.1
 # RUN pip3 install sanic==21.12.1 -i http://pypi.tuna.tsinghua.edu.cn/simple/ --trusted-host pypi.tuna.tsinghua.edu.cn
-
-RUN pip3 install --upgrade cmake
 
 RUN pip3 install uvloop==0.16.0
 RUN pip3 install websockets==10.4

@@ -36,8 +36,11 @@ RUN apt-get install -yq --no-install-recommends libssl-dev file ninja-build
 # RUN pip3 install --no-cache-dir -r requirements.txt 
 RUN pip3 install --upgrade pip
 
-RUN python3 -m pip install cmake
-RUN python3 -m pip install meson ninja
+RUN apt-get install build-essential
+RUN apt-get install ninja-build
+
+#RUN python3 -m pip install cmake
+#RUN python3 -m pip install meson ninja
 
 #RUN apt-get purge --auto-remove cmake
 

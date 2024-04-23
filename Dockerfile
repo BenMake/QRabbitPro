@@ -77,7 +77,7 @@ RUN pip3 install httpx
 
 #RUN pip install --default-timeout=1000 git+https://github.com/skvark/opencv-python.git
 
-RUN pip3 install opencv-python-headless
+#RUN pip3 install opencv-python-headless
 
 #RUN pip3 install opencv-python-headless==4.5.3.56
 # pip3 install opencv-contrib-python==4.5.3.56

@@ -69,11 +69,17 @@ RUN pip3 install tortoise-orm==0.19.3
 # RUN pip3 install sanic_jwt
 # RUN pip3 install sanic_openapi
 # RUN pip3 install tortoise-orm
+
 RUN pip3 install ruamel.yaml
 RUN pip3 install qrcode
 RUN pip3 install tzlocal
 RUN pip3 install httpx
-RUN pip3 install opencv-python-headless==4.5.3.56
+
+#RUN pip install --default-timeout=1000 git+https://github.com/skvark/opencv-python.git
+
+RUN pip3 install opencv-python-headless
+
+#RUN pip3 install opencv-python-headless==4.5.3.56
 # pip3 install opencv-contrib-python==4.5.3.56
 
 RUN pip3 install fake-useragent
